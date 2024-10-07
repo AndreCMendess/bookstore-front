@@ -1,0 +1,12 @@
+.container{
+    height: 85%;
+    background-color: darkgray;
+}
+
+.side-nav{
+    width: 150px;
+}
+
+i{
+    padding-right: .6rem;
+}
