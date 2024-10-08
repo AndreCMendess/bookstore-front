@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
 import { RouterOutlet } from '@angular/router';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-nav',
@@ -12,4 +13,13 @@ import { RouterOutlet } from '@angular/router';
 })
 export class NavComponent {
 
+  constructor(private router: Router) {}
+
+  navigateTo(path: string) {
+    this.router.navigate([path]);
+  }
+
+  onNavigate(path: string) {
+    alert(`Navegando para ${path}`);
+  }
 }
