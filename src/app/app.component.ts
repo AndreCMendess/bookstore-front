@@ -10,6 +10,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatCardModule } from '@angular/material/card';
 import { RouterModule } from '@angular/router';
 import { MatTableModule } from '@angular/material/table';
+import {MatButtonModule} from '@angular/material/button';
 
 
 @Component({
@@ -18,7 +19,8 @@ import { MatTableModule } from '@angular/material/table';
   standalone: true,
   imports: [HeaderComponent,RouterOutlet,MatToolbarModule,
     FooterComponent,NavComponent,MatSidenavModule,
-    MatListModule,MatIconModule,MatCardModule,RouterModule,MatTableModule]
+    MatListModule,MatIconModule,MatCardModule,RouterModule,MatTableModule,
+    MatButtonModule]
 
  
 })

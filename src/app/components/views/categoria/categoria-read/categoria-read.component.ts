@@ -21,20 +21,20 @@ export class CategoriaReadComponent implements OnInit {
   categorias: Categoria[] = []
   private subscription: Subscription = new Subscription();
 
-  displayedColumns: string[] =['id','nome','descricao','acoes'];
+  displayedColumns: string[] =['id','nome','descricao','livros','acoes'];
 
   constructor(private service: CategoriaService) {}
 
   ngOnInit() {
     this.subscription = this.service.findAll().subscribe(resposta => {
-      console.log(resposta); // Loga a resposta
-      this.categorias = resposta; // Atribui a resposta ao array
+      console.log(resposta); 
+      this.categorias = resposta; 
     });
   }
 
   ngOnDestroy() {
     if (this.subscription) {
-      this.subscription.unsubscribe(); // Cancela a assinatura
+      this.subscription.unsubscribe(); 
     }
   }
 

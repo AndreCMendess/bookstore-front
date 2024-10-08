@@ -7,10 +7,12 @@ import { environment } from "../../../../environments/environment";
 @Injectable({
     providedIn: 'root'
 })
+
 export class CategoriaService{
+
     constructor(private http: HttpClient) { }
 
-      baseUrl: string  =  environment.baseUrl
+    baseUrl: string  =  environment.baseUrl
 
     findAll():Observable<Categoria[]> {
         const url = `${this.baseUrl}/categorias`
