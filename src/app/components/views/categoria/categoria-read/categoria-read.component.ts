@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MatListModule } from '@angular/material/list';
 import { MatTableModule } from '@angular/material/table';
-import { RouterOutlet } from '@angular/router';
+import { Router, RouterOutlet } from '@angular/router';
 import { CategoriaService } from '../categoria.service';
 import { Categoria } from '../categoria.model';
 import { Subscription } from 'rxjs';
@@ -23,7 +23,7 @@ export class CategoriaReadComponent implements OnInit {
 
   displayedColumns: string[] =['id','nome','descricao','livros','acoes'];
 
-  constructor(private service: CategoriaService) {}
+  constructor(private service: CategoriaService, private router: Router) {}
 
   ngOnInit() {
     this.subscription = this.service.findAll().subscribe(resposta => {
@@ -38,6 +38,9 @@ export class CategoriaReadComponent implements OnInit {
     }
   }
 
+  navegarParaCategoriaCreate(){
+    this.router.navigate(["categorias/create"])
+  }
  
 
 }

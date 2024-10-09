@@ -10,8 +10,11 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatCardModule } from '@angular/material/card';
 import { RouterModule } from '@angular/router';
 import { MatTableModule } from '@angular/material/table';
-import {MatButtonModule} from '@angular/material/button';
-
+import { MatButtonModule } from '@angular/material/button';
+import { FormsModule } from '@angular/forms';
+import {MatInputModule} from '@angular/material/input';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatSnackBarModule} from '@angular/material/snack-bar';
 
 @Component({
   selector: 'app-root',
@@ -20,7 +23,7 @@ import {MatButtonModule} from '@angular/material/button';
   imports: [HeaderComponent,RouterOutlet,MatToolbarModule,
     FooterComponent,NavComponent,MatSidenavModule,
     MatListModule,MatIconModule,MatCardModule,RouterModule,MatTableModule,
-    MatButtonModule]
+    MatButtonModule,FormsModule,MatInputModule,MatFormFieldModule,MatSnackBarModule]
 
  
 })

@@ -1,7 +1,7 @@
 import { Routes } from '@angular/router';
 import { HomeComponent } from './components/views/home/home.component';
 import { CategoriaReadComponent } from './components/views/categoria/categoria-read/categoria-read.component';
-
+import { CategoriaCreateComponent } from './components/views/categoria/categoria-create/categoria-create.component';
 export const routes: Routes = [
 {
     path: '',
@@ -10,5 +10,9 @@ export const routes: Routes = [
 {
     path: 'categorias',
     component: CategoriaReadComponent
+},
+{
+    path: 'categorias/create',
+    component: CategoriaCreateComponent
 }
 ];
