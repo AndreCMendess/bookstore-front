@@ -18,6 +18,5 @@
             <textarea matInput [(ngModel)] = "livro.texto" [formControl]="texto" required type ="text" name="texto" placeholder="Ex: Lore Ipsum" maxlength="2000000"></textarea>
             <mat-error *ngIf="texto.invalid">{{getMessage()}}</mat-error>
         </mat-form-field>
-
-       
+      
 </form>
