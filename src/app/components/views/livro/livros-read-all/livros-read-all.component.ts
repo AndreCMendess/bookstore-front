@@ -4,12 +4,13 @@ import { MatTableModule } from '@angular/material/table';
 import { Livro } from '../livro.model';
 import { LivroService } from '../livro.service';
 import { ActivatedRoute, Router } from '@angular/router';
+import { RouterModule } from '@angular/router';
 
 
 @Component({
   selector: 'app-livros-read-all',
   standalone: true,
-  imports: [MatListModule,MatTableModule],
+  imports: [MatListModule,MatTableModule,RouterModule],
   templateUrl: './livros-read-all.component.html',
   styleUrl: './livros-read-all.component.css'
 })

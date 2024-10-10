@@ -53,9 +53,6 @@ livro: Livro = {
   }
 
   create(): void {
-
-
-  
     this.service.create(this.livro, this.id_cat).subscribe(
       (resposta) => {
         this.router.navigate([`categorias/${this.id_cat}/livros`]);

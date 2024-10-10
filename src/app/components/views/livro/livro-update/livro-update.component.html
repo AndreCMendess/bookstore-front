@@ -1,5 +1,5 @@
 <form>
-    <h1>CRIAR NOVO LIVRO</h1>
+    <h1>Atualizar LIVRO</h1>
 
         <mat-form-field class = "form">
             <mat-label>Titulo</mat-label>
@@ -19,5 +19,8 @@
             <mat-error *ngIf="texto.invalid">{{getMessage()}}</mat-error>
         </mat-form-field>
 
-       
+        <div class = "buttons">
+            <button (click)="update()" [disabled]="getMessage()" class="b" mat-stroked-button color="primary"> ATUALIZAR </button>
+            <button (click)="cancel()" class= "b" mat-stroked-button color="warn"> CANCELAR </button>
+        </div>
 </form>

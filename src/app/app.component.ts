@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Router, RouterOutlet } from '@angular/router';
+import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from './components/template/header/header.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { FooterComponent } from './components/template/footer/footer.component';
@@ -16,6 +16,7 @@ import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
 
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -23,7 +24,7 @@ import {MatSnackBarModule} from '@angular/material/snack-bar';
   imports: [HeaderComponent,RouterOutlet,MatToolbarModule,
     FooterComponent,NavComponent,MatSidenavModule,
     MatListModule,MatIconModule,MatCardModule,RouterModule,MatTableModule,
-    MatButtonModule,FormsModule,MatInputModule,MatFormFieldModule,MatSnackBarModule,ReactiveFormsModule ]
+    MatButtonModule,FormsModule,MatInputModule,MatFormFieldModule,MatSnackBarModule,ReactiveFormsModule]
 
  
 })
