@@ -3,7 +3,7 @@ import { MatListModule } from '@angular/material/list';
 import { MatTableModule } from '@angular/material/table';
 import { Livro } from '../livro.model';
 import { LivroService } from '../livro.service';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 
 
 @Component({
@@ -21,7 +21,7 @@ export class LivrosReadAllComponent implements OnInit {
 
   livros: Livro[] = [];
 
-  constructor(private service : LivroService , private route: ActivatedRoute) {
+  constructor(private service : LivroService , private route: ActivatedRoute , private router : Router) {
 
   }
 
@@ -35,6 +35,10 @@ export class LivrosReadAllComponent implements OnInit {
       this.livros = resposta;
       console.log(this.livros); 
     });
+  }
+
+  criarNovoLivro(): void {
+    this.router.navigate([`categorias/${this.id_cat}/livros/create`]);
   }
 
 

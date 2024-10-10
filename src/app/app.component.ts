@@ -11,7 +11,7 @@ import { MatCardModule } from '@angular/material/card';
 import { RouterModule } from '@angular/router';
 import { MatTableModule } from '@angular/material/table';
 import { MatButtonModule } from '@angular/material/button';
-import { FormsModule } from '@angular/forms';
+import { FormsModule , ReactiveFormsModule } from '@angular/forms';
 import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
@@ -23,7 +23,7 @@ import {MatSnackBarModule} from '@angular/material/snack-bar';
   imports: [HeaderComponent,RouterOutlet,MatToolbarModule,
     FooterComponent,NavComponent,MatSidenavModule,
     MatListModule,MatIconModule,MatCardModule,RouterModule,MatTableModule,
-    MatButtonModule,FormsModule,MatInputModule,MatFormFieldModule,MatSnackBarModule]
+    MatButtonModule,FormsModule,MatInputModule,MatFormFieldModule,MatSnackBarModule,ReactiveFormsModule ]
 
  
 })
