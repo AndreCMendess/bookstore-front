@@ -44,6 +44,11 @@ export class CategoriaService{
     delete(id : String):Observable<void>{
         const url = `${this.baseUrl}/categorias/${id}`
         return this.http.delete<void>(url);
-      }
+    }
+
+    update(categoria : Categoria):Observable<void>{
+        const url = `${this.baseUrl}/categorias/${categoria.id}`;
+        return this.http.put<void>(url,categoria);
+    }
 
 }   
