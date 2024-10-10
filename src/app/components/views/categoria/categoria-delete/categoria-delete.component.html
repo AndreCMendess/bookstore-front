@@ -1,0 +1,9 @@
+<form>
+    <h1>DELETANDO CATEGORIA</h1>
+
+    <input type="text" [(ngModel)]="categoria.nome" name="nome" placeholder="Nome">
+    <textarea [(ngModel)]="categoria.descricao" name="descricao" placeholder="Descrição"></textarea>
+
+    <button (click)="cancel()">CANCELAR</button>
+    <button (click)="delete()">DELETAR</button>
+</form>

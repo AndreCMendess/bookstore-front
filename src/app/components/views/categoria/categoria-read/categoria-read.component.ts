@@ -1,18 +1,16 @@
 import { Component, OnInit } from '@angular/core';
 import { MatListModule } from '@angular/material/list';
 import { MatTableModule } from '@angular/material/table';
-import { Router, RouterOutlet } from '@angular/router';
+import { Router, RouterModule, RouterOutlet } from '@angular/router';
 import { CategoriaService } from '../categoria.service';
 import { Categoria } from '../categoria.model';
 import { Subscription } from 'rxjs';
 
 
-
-
 @Component({
   selector: 'app-categoria-read',
   standalone: true,
-  imports: [MatListModule,RouterOutlet,MatTableModule],
+  imports: [MatListModule,RouterOutlet,MatTableModule , RouterModule],
   templateUrl: './categoria-read.component.html',
   styleUrl: './categoria-read.component.css'
 })
