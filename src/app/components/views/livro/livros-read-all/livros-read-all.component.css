@@ -1,7 +1,6 @@
 .content{
     width: 90%;
     margin: 1.4rem auto;
-
 }
 
 .title{
@@ -15,19 +14,8 @@
     font-weight: 500;
 }
 
-.nova-categoria{
+.novo-livro{
     margin-bottom: 1rem;
-    color:white;
-    background: transparent;
-    
+    color: white;
+    background-color: transparent;
 }
-
-.edit{
-    color:rgb(64, 118, 139)
-}
-
-.delete{
-    color:rgb(207, 57, 57);
-    margin-left: .5rem;
-}
-
